@@ -32,7 +32,8 @@ android {
 }
 
 dependencies {
-
+    implementation(files("./libs/CtCtms_1.3.5.jar"))
+    implementation(files("./libs/CTOS.CtReader_0.0.16.jar"))
     implementation("androidx.appcompat:appcompat:1.6.1")
     implementation("com.google.android.material:material:1.9.0")
     implementation("androidx.constraintlayout:constraintlayout:2.1.4")
