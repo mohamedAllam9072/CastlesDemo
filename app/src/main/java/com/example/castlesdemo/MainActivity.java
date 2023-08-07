@@ -1,5 +1,6 @@
 package com.example.castlesdemo;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.os.SystemClock;
 import android.util.Log;
@@ -17,12 +18,13 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         findViewById(R.id.buttonCL).setOnClickListener(view -> {
-            Log.d(TAG, "ContactLess");
+            Log.d(TAG, "CtCL");
             int x = clpp_test();
         });
         findViewById(R.id.buttonC).setOnClickListener(view -> {
-            int x = clpp_test();
-            Log.d(TAG, "Contact");
+            Log.d(TAG, "CtCS");
+            Intent i = new Intent(this, MainActivity2.class);
+            startActivity(i);
         });
     }
 
